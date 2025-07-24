@@ -1,0 +1,3 @@
+# The Last Signal
+
+The old comms tower stood skeletal against the bruised twilight sky. Elara checked the charge on her multi-tool one last time, its green light a lonely beacon in the growing dark. For three generations, the tower had been silent, a relic of a time when signals crisscrossed the stars. But tonight, she had a new theory, a desperate hope scrawled in the margins of her grandfather's last journal.

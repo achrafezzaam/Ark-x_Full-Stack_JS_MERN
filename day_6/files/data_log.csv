@@ -1,0 +1,16 @@
+Timestamp,UserID,EventType,StatusCode,ResponseTime_ms
+2025-07-24T15:20:01Z,user_3487,login_success,200,150
+2025-07-24T15:20:15Z,user_1245,api_call,200,85
+2025-07-24T15:20:22Z,user_9583,login_failure,401,210
+2025-07-24T15:20:25Z,user_1245,api_call,200,92
+2025-07-24T15:20:30Z,user_3487,update_profile,201,350
+2025-07-24T15:20:45Z,user_7766,search_query,200,120
+2025-07-24T15:20:51Z,user_1245,api_call,500,1500
+2025-07-24T15:20:59Z,user_3487,logout,200,75
+2025-07-24T15:21:05Z,user_9583,login_success,200,180
+2025-07-24T15:21:11Z,user_7766,api_call,200,95
+2025-07-24T15:21:18Z,user_9583,submit_form,201,450
+2025-07-24T15:21:24Z,user_1245,search_query,200,110
+2025-07-24T15:21:33Z,user_7766,api_call,404,300
+2025-07-24T15:21:40Z,user_9583,api_call,200,88
+2025-07-24T15:21:45Z,user_1245,logout,200,65
