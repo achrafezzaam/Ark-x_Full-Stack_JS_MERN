@@ -1,0 +1,61 @@
+[
+  {
+    "accountID": "ACC1001",
+    "name": "John Doe",
+    "pin": "1234",
+    "balance": 3377,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 500,
+        "date": "2024-02-01"
+      },
+      {
+        "type": "withdraw",
+        "amount": 200,
+        "date": "2024-02-02"
+      },
+      {
+        "type": "deposit",
+        "amount": 2000,
+        "date": "2025-08-12"
+      },
+      {
+        "type": "withdraw",
+        "amount": 123,
+        "date": "2025-08-12"
+      }
+    ]
+  },
+  {
+    "accountID": "ACC1002",
+    "name": "Jane Smith",
+    "pin": "4321",
+    "balance": 2200,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 1000,
+        "date": "2024-02-03"
+      },
+      {
+        "type": "withdraw",
+        "amount": 300,
+        "date": "2024-02-04"
+      }
+    ]
+  },
+  {
+    "accountID": "ACC1003",
+    "name": "Achraf Ezzaam",
+    "pin": "7829",
+    "balance": 9000,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 9000,
+        "date": "2025-08-12"
+      }
+    ]
+  }
+]

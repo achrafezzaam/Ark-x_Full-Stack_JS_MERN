@@ -1,30 +1,24 @@
 #!/usr/bin/env node
 
-import * as readline from 'readline';
-
-const askQuestion1 = () => {
-  const rl1 = readline.createInterface({
+import * as readline from 'node:readline/promises';
+import { stdin as input, stdout as output } from 'node:process';
+const askQuestion = async () => {
+  const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
 
-  rl1.question("Enter your name: ", (entry) => {
-    rl1.close();
-    askQuestion2(entry); 
-  });
+  const name = await rl.question("Enter your name: ");
+  const phone = await rl.question("Enter your phone number: ");
+  
+  rl.close();
+
+  return [name, phone];
 };
 
-const askQuestion2 = (name) => {
-  const rl2 = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
+const main = async () => {
+  const data = await askQuestion();
+  console.log(data);
+}
 
-  rl2.question("Enter your phone number: ", (entry) => {
-    rl2.close();
-    return [name, entry]
-  });
-};
-
-const data = askQuestion1();
-
+main();
