@@ -1,17 +1,52 @@
 [
   {
     "id": 1,
-    "title": "test 1",
-    "content": "lorem ipsum mwoskdnws dvwskjdvnwlsdv wsdvk wskld vwksd vwsjdvnlwksj zf wsdkfjnwmsfd"
+    "title": "First Post",
+    "content": "This is the content of the first post."
   },
   {
     "id": 2,
-    "title": "test 2",
-    "content": "nkjwnsdfk gserkjga nq,nz fswkjfwsf wsdf wjsf wks fw efwsefjnwo fwzejfno"
+    "title": "Second Post",
+    "content": "This is the content of the second post."
   },
   {
     "id": 3,
-    "title": "test 3",
-    "content": "jhvsdfsgdfg"
+    "title": "welcome",
+    "content": "Welcome to this blog. I'm currently working on improving the features of the website. Thank you for your comprehension"
+  },
+  {
+    "id": 4,
+    "title": "Fourth Post",
+    "content": "This is the content of the fourth post."
+  },
+  {
+    "id": 5,
+    "title": "Fifth Post",
+    "content": "This is the content of the fifth post."
+  },
+  {
+    "id": 6,
+    "title": "Sixth Post",
+    "content": "This is the content of the sixth post."
+  },
+  {
+    "id": 7,
+    "title": "Seventh Post",
+    "content": "This is the content of the seventh post."
+  },
+  {
+    "id": 8,
+    "title": "eighth Post",
+    "content": "This is the content of the eighth post."
+  },
+  {
+    "id": 9,
+    "title": "nineth Post",
+    "content": "This is the content of the nineth post."
+  },
+  {
+    "id": 10,
+    "title": "tenth Post",
+    "content": "This is the content of the tenth post."
   }
 ]

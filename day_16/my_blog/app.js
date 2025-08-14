@@ -1,45 +1,34 @@
 const express = require('express');
-const {getAllPosts, getPost, createPost} = require('./models/post');
+
+const postRouter = require('./routes/postRoutes');
 
 const app = express();
 app.use(express.json());
 
 const port = 3000;
 
+const logger = (req, res, next) => {
+    req.time = new Date(Date.now()).toString();
+    console.log(`${req.time} - ${req.method} method on ${req.url}`);
+    next();
+};
+
+app.use(logger);
+
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Welcome to the Blog API\n');
 });
 
-app.get('/posts', async (req, res) => {
-    try {
-        let test = await getAllPosts();
-        res.status(200).json(test);
-    } catch (error) {
-        res.status(500).send("Failed to retrieve the posts.")
-    }
-});
+app.use('/posts', postRouter);
 
-app.get('/posts/:id', async (req, res) => {
-    try {
-        let postId = req.params.id;
-        postId = parseInt(postId);
-        const post = await getPost(postId);
-        res.status(200).json(post);
-    } catch (error) {
-        res.status(500).send("Failed to retrieve the post.")
-    }
-});
-
-app.post('/posts', async (req, res) => {
-    try {
-        data = req.body;
-        await createPost(data);
-        res.status(200).send("Data received successfully.");
-    } catch (error) {
-        res.status(500).send("Failed to receive the data");
-    }
+app.use((err, req, res, next) => {
+    console.error(`[ERROR] ${err.stack}`);
+    res.status(err.status || 500).json({
+        status: 'error',
+        message: err.message || 'An internal server error occurred'
+    });
 });
 
 app.listen(port, () => {
-    console.log("Server listening on port: ", port);
+    console.log(`Server listening on port: ${port}`);
 });
